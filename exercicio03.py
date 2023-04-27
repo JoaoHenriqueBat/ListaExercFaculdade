@@ -1,0 +1,16 @@
+'''O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que a percentagem do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo que leia o custo de fábrica de um carro e escreva o custo ao consumidor.
+'''
+# Entrada de dados
+custoF = float(input('Digite o valor de fábrica: '))
+
+# Processamento
+dist = custoF*0.28
+imp = custoF*(45/100)
+
+custoConsumidor = custoF + dist + imp
+
+# Saída de dados
+print(f'O custo do consumidor será de R${custoConsumidor:.2f} ')
+
+
+
